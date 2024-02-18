@@ -13,7 +13,6 @@ const firebaseConfig = {
 };
 
 export const app = initializeApp(firebaseConfig);
-console.log(process.env);
 
 export const auth = getAuth(app);
 export const db = getDatabase(app);
