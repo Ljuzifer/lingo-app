@@ -1,7 +1,7 @@
 {
   "name": "lingo-app",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
