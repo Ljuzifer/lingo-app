@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lingo-app/static/css/main.486fb646.css",
-    "main.js": "/lingo-app/static/js/main.999d0f5e.js",
+    "main.js": "/lingo-app/static/js/main.3f570211.js",
     "static/media/sticker.png": "/lingo-app/static/media/sticker.9b8dc76fa337002d4fb5.png",
     "static/media/InlineSprite.svg": "/lingo-app/static/media/InlineSprite.0aa7e9e798631f9ff61ac026e33af5bc.svg",
     "static/media/iMac = Green.svg": "/lingo-app/static/media/iMac = Green.3358dc781b9d70f497c1.svg",
@@ -11,10 +11,10 @@
     "static/media/iMac = Yellow.svg": "/lingo-app/static/media/iMac = Yellow.85bb9ab8d4b10631647b.svg",
     "index.html": "/lingo-app/index.html",
     "main.486fb646.css.map": "/lingo-app/static/css/main.486fb646.css.map",
-    "main.999d0f5e.js.map": "/lingo-app/static/js/main.999d0f5e.js.map"
+    "main.3f570211.js.map": "/lingo-app/static/js/main.3f570211.js.map"
   },
   "entrypoints": [
     "static/css/main.486fb646.css",
-    "static/js/main.999d0f5e.js"
+    "static/js/main.3f570211.js"
   ]
 }
