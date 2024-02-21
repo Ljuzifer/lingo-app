@@ -1,0 +1,26 @@
+.btn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 16px 48px;
+  border: transparent;
+  border-radius: var(--border-radius-btn);
+  background-color: var(--color-btn);
+  transition: background-color 0.3s ease;
+  color: #121417;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--active-color-btn);
+}
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.text {
+  line-height: 1.38;
+  text-align: center;
+}

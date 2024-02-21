@@ -1,9 +1,22 @@
 .header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  position: fixed;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  width: 100vw;
   height: 82px;
+  z-index: 666;
+  background-color: #fff;
+  /* padding: 0 250px; */
+}
+
+.thumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 20px 64px;
 }
 
 .logo_title {
@@ -13,12 +26,12 @@
   letter-spacing: -0.4px;
 }
 
-@media (max-width: 500px) {
-  .header {
+@media (max-width: 666px) {
+  /* .header {
     justify-content: space-between;
-  }
+  } */
   .logo_title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 

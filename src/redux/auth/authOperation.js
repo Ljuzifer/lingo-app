@@ -1,5 +1,5 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import { auth } from 'server/firebaseConfig';
+import { createAsyncThunk } from "@reduxjs/toolkit";
+import { auth } from "server/firebaseConfig";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -8,12 +8,12 @@ import {
   onAuthStateChanged,
   signInWithPopup,
   GoogleAuthProvider,
-} from 'firebase/auth';
+} from "firebase/auth";
 
 const googleAuthProvider = new GoogleAuthProvider();
 
 export const registrationUser = createAsyncThunk(
-  'user/registrationUser',
+  "user/registrationUser",
   async ({ name, email, password }, { rejectWithValue }) => {
     try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -39,7 +39,7 @@ export const registrationUser = createAsyncThunk(
 );
 
 export const loginUser = createAsyncThunk(
-  'auth/loginUser',
+  "auth/loginUser",
   async ({ email, password }, { rejectWithValue }) => {
     try {
       const userCredential = await signInWithEmailAndPassword(
@@ -60,11 +60,11 @@ export const loginUser = createAsyncThunk(
 );
 
 export const currentUser = createAsyncThunk(
-  'auth/currentUser',
+  "auth/currentUser",
   async (_, { rejectWithValue }) => {
     try {
       return new Promise((resolve, reject) => {
-        onAuthStateChanged(auth, currentUser => {
+        onAuthStateChanged(auth, (currentUser) => {
           if (currentUser) {
             const user = {
               displayName: currentUser.displayName,
@@ -74,7 +74,7 @@ export const currentUser = createAsyncThunk(
             };
             resolve(user);
           } else {
-            return reject('Пользователь не аутентифицирован');
+            return reject("User is unauthenticated");
           }
         });
       });
@@ -85,7 +85,7 @@ export const currentUser = createAsyncThunk(
 );
 
 export const logoutUser = createAsyncThunk(
-  'auth/logoutUser',
+  "auth/logoutUser",
   async (_, { rejectWithValue }) => {
     try {
       await signOut(auth);
@@ -96,7 +96,7 @@ export const logoutUser = createAsyncThunk(
 );
 
 export const authorizationGoogle = createAsyncThunk(
-  'auth/authorizationGoogle',
+  "auth/authorizationGoogle",
   async (_, { rejectWithValue }) => {
     try {
       const userCredential = await signInWithPopup(auth, googleAuthProvider);
@@ -107,7 +107,7 @@ export const authorizationGoogle = createAsyncThunk(
         accessToken: userCredential.user.accessToken,
       };
     } catch (error) {
-      console.error('Login error:', error.message);
+      console.error("Login error:", error.message);
       return rejectWithValue(error.message);
     }
   }
