@@ -13,20 +13,11 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDrA5-K25u4klaTM3m3jl8xvyh419yFO0c",
-//   authDomain: "lingo-db.firebaseapp.com",
-//   databaseURL: "https://lingo-db-default-rtdb.firebaseio.com",
-//   projectId: "lingo-db",
-//   storageBucket: "lingo-db.appspot.com",
-//   messagingSenderId: "1073634621487",
-//   appId: "1:1073634621487:web:4d69ffcfc7ddb4fa27eeda",
-//   measurementId: "G-2LWZR3SWS6",
-// };
+const app = initializeApp(firebaseConfig);
 
-export const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getDatabase(app);
 
-export const auth = getAuth(app);
-export const db = getDatabase(app);
+const dbRef = ref(db);
 
-export const dbRef = ref(db);
+export { app, auth, db, dbRef };
