@@ -32,7 +32,7 @@
   } */
 }
 
-@media (max-width: 946px) {
+@media (max-width: 1000px) {
   .favorit_position {
     position: absolute;
     display: block;

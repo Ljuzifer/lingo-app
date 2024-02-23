@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   gap: 16px;
 }
+
 .teacher_statics li {
   display: flex;
   align-items: center;
@@ -56,14 +57,27 @@
   fill: transparent;
   margin-right: 8px;
 }
+
 .favorit_position {
   display: block;
 }
-@media (max-width: 946px) {
+
+@media (max-width: 860px) {
+  .teacher_statics {
+    width: 440px;
+  }
+}
+
+@media (max-width: 1000px) {
   .teacher_wrap {
     flex-direction: column;
   }
+
   .favorit_position {
     display: none;
+  }
+
+  .servis_span {
+    margin-bottom: 28px;
   }
 }
