@@ -23,7 +23,7 @@
 }
 
 .static_after::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 1px;
   height: 16px;
@@ -44,8 +44,6 @@
   color: var(--green-color);
 }
 
-
-
 .icon_heart.active {
   stroke: #f4c550;
   fill: #f4c550;
@@ -58,14 +56,14 @@
   fill: transparent;
   margin-right: 8px;
 }
-.favorit_position{
+.favorit_position {
   display: block;
 }
-@media (max-width: 700px) {
+@media (max-width: 946px) {
   .teacher_wrap {
     flex-direction: column;
   }
-  .favorit_position{
+  .favorit_position {
     display: none;
   }
 }
