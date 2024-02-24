@@ -3,22 +3,15 @@
   margin: 0 auto;
   min-width: 320px;
   max-width: 1342px;
-  /* height: 100vh; */
 }
 
-/* @media (min-width: 375px) {
+@media (max-width: 319px) {
   .container {
-    width: 365px;
+    max-width: 319px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 734px;
-  }
-} */
-
-@media (min-width: 1440px) {
+@media (min-width: 320px) and (min-width: 1440px) {
   .container {
     max-width: 1342px;
   }

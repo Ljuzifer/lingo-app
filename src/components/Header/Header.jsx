@@ -10,7 +10,7 @@ export default function Header() {
       <div className={css.thumb}>
         <Link className={css.logo} to={"/"}>
           <svg className={css.icon}>
-            {/* <use xlinkHref={`${sprite}#ukraine`} /> */}
+            <use xlinkHref={`${sprite}#ukraine`} />
             <use xlinkHref={`${sprite}#logo-books`} />
           </svg>
           <p className={css.logo_title}>LearnLingo</p>

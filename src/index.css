@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
 
-  color: var(#121417, --dark-color);
+  color: var(--dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto", sans-serif;
