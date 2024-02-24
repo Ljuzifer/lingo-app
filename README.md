@@ -35,18 +35,24 @@ LearnLingo is a language learning application that leverages modern web technolo
 ---
 
 <div align="center">
-<h3>BASE Live URL: <a href="https://healthy-way-app.onrender.com" target="_blank" rel="noreferrer noopener">https://ljuzifer.github.io/lingo-app/</a></h3>
+<h3>BASE Live URL: <a href="https://ljuzifer.github.io/lingo-app" target="_blank" rel="noreferrer noopener">https://ljuzifer.github.io/lingo-app/</a></h3>
 </div>
 
 ---
 
 ## Content
 
+- [TS & Mockup](#TS)
 - [Technologies](#Technologies)
 - [Development](#Development)
 - [Project Developer](#Developer)
 
 ---
+
+## TS
+
+- [TS](https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y/edit?pli=1)
+- [Design Mockup](https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc/%D0%9F%D0%B5%D1%82-%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82-%D0%B4%D0%BB%D1%8F-%D0%9A%D0%A6?type=design&node-id=0-1&mode=design&t=jCmjSs9PeOjObYSc-0)
 
 ## Technologies
 
