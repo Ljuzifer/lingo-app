@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+<h1 align="center" style="color: #2222ec; font-family: Roboto Mono,Consolas,Liberation Mono,Courier New,Courier,monospace;
+    font-size: 55px;
+    font-weight: 700;">
+LEARN LINGO APP <p style="color: yellow">with Firebase</p> <img src="./public/icons/logo-books.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center" color="#694e04" style="color: #694e04; font-family: Roboto Mono,Consolas,Liberation Mono,Courier New,Courier,monospace;
+    font-size: 22px;
+    font-weight: 500;">
+LearnLingo is a language learning application that leverages modern web technologies such as React, Redux, and Firebase to provide an interactive and efficient platform for language learners.
+</div>
+<div align='center'>
+<img src='./src/images/sticker.png'/>
+</div>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<div align="center">
+<img src="./public/icons/windows.svg" width="220"/>
+</div>
 
-### `npm start`
+<div align="center" style="margin-left: auto; margin-right: auto; width: fit-content;">
+<a><img src="./public/icons/html.png" width="50"/></a>
+<a><img src="./public/icons/css.png" width="50"/></a>
+<a><img src="./public/icons/react.png" width="50"/></a>
+<a><img src="./public/icons/redux.png" width="50"/></a>
+<a><img src="./public/icons/formik.256x256.png" width="50"/></a>
+<a><img src="./public/icons/yup.webp" width="100"/></a>
+<a><img src="./public/icons/firebase.png" width="50"/></a>
+<a><img src="./public/icons/google.png" width="50"/></a>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+<h3>BASE Live URL: <a href="https://healthy-way-app.onrender.com" target="_blank" rel="noreferrer noopener">https://ljuzifer.github.io/lingo-app/</a></h3>
+</div>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Content
 
-### `npm run build`
+- [Technologies](#Technologies)
+- [Development](#Development)
+- [Project Developer](#Developer)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React]
+- [React DOM]
+- [React Router DOM]
+- [React-Select]
+- [React Redux]
+- [Redux Toolkit]
+- [Redux Persist]
+- [Formik]
+- [Yup]
+- [Firebase]
+- [Firebase Google Authentication]
+- [Firebase Realtime Database]
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Development
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Clone this repository to your local machine:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To clone repo, run the following command:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+`git clone` [tap!](https://github.com/Ljuzifer/lingo-app.git)
+```
 
-## Learn More
+### Installing Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To install dependencies, run the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+$ npm i
+```
 
-### Code Splitting
+### Running the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run the dev server, run the following command:
 
-### Analyzing the Bundle Size
+```sh
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<div align="center">
+  <img src="https://media4.giphy.com/media/6wDZlsdqvMweQaNY2w/giphy.gif?cid=ecf05e47mkur64xx7xsm444af0s4xi1yxegcc0k76oc57j7v&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="180"/>
+</div>
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <h4>Created by &copy; Ljuzifer</h4>
+  <a href="https://www.linkedin.com/in/ljuzifer/" target="_blank" rel="noopener norefferer">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
+<div align='center'>
+<a href="https://t.me/Ljuzifer" target="_blank" rel="noreferrer"> 
+<picture> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="32" height="32" /> 
+</picture> 
+</a>
+<a href="mailto:ljuzifer@gmail.com" target="_blank" rel="noreferrer"> 
+<picture> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="32" height="32" /> 
+</picture> 
+</a>
+</div>
