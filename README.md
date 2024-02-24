@@ -28,6 +28,8 @@ LearnLingo is a language learning application that leverages modern web technolo
 <a><img src="./public/icons/yup.webp" width="100"/></a>
 <a><img src="./public/icons/firebase.png" width="50"/></a>
 <a><img src="./public/icons/google.png" width="50"/></a>
+<a><img src="./public/icons/github-icon.webp" width="60"/></a>
+<a><img src="./public/icons/Visual_Studio_Code_0.10.1_icon.png" width="50"/></a>
 </div>
 
 ---
