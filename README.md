@@ -69,9 +69,7 @@ LearnLingo is a language learning application that leverages modern web technolo
 
 To clone repo, run the following command:
 
-```sh
 `git clone` [tap!](https://github.com/Ljuzifer/lingo-app.git)
-```
 
 ### Installing Dependencies
 
