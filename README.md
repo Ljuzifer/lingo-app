@@ -92,7 +92,7 @@ $ npm i
 To run the dev server, run the following command:
 
 ```sh
-npm start
+$ npm start
 ```
 
 ---
