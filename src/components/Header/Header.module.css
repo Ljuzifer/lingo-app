@@ -26,15 +26,6 @@
   letter-spacing: -0.4px;
 }
 
-@media (max-width: 666px) {
-  /* .header {
-    justify-content: space-between;
-  } */
-  .logo_title {
-    font-size: 18px;
-  }
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -47,4 +38,30 @@
 
 .name {
   line-height: 1.25;
+}
+
+@media (max-width: 666px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .logo_title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 800px) {
+  .thumb {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .thumb {
+    padding: 20px 13px;
+  }
+
+  .logo_title {
+    font-size: 15px;
+  }
 }

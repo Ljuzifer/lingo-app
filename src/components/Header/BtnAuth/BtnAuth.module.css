@@ -1,8 +1,9 @@
-
-.list_btn{
-    display: none;
+.list_btn {
+  display: none;
 }
 .name {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.25;
 }
 
@@ -18,42 +19,49 @@
   width: 20px;
   height: 20px;
 }
-.btn_login_mob svg use{
+.btn_login_mob svg use {
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 888px) {
+  .name {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .btn_login_mob {
     display: block;
   }
 }
 
-@media( min-width: 601px) {
-    .list_btn {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
+@media (min-width: 601px) {
+  .list_btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
 
-.btn_login {
-  font-weight: 700;
-  line-height: 1.25;
-  border: none;
-  background: transparent;
-  padding: 14px 0;
-}
+  .btn_login {
+    font-weight: 700;
+    line-height: 1.25;
+    border: none;
+    background: transparent;
+    padding: 14px 0;
+  }
 
-.btn {
-  display: flex;
-  padding: 14px 39px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: var(--border-radius-btn);
-  border: none;
-  background: var(--dark-color);
-  color: var(--white-color);
-  font-weight: 700;
-  line-height: 1.25;
-}
+  .btn {
+    display: flex;
+    padding: 14px 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--border-radius-btn);
+    border: none;
+    background: var(--dark-color);
+    color: var(--white-color);
+    font-weight: 700;
+    line-height: 1.25;
+  }
 }

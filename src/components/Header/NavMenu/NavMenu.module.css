@@ -2,10 +2,26 @@
   display: flex;
   gap: 28px;
   line-height: 1.25;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 425px) and (max-width: 666px) {
   .list_nav {
-    gap: 8px;
+    gap: 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .list_nav {
+    gap: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .list_nav {
+    flex-direction: column;
   }
 }

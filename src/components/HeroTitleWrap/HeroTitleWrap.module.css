@@ -31,16 +31,29 @@
   font-weight: 700;
   background-color: var(--color-btn);
   transition: background-color 0.3s ease;
-    -webkit-border-radius: var(--border-radius-btn);
-  -moz-border-radius: var(--border-radius-btn); 
-  border-radius: var(--border-radius-btn); 
-    color: #121417;
+  -webkit-border-radius: var(--border-radius-btn);
+  -moz-border-radius: var(--border-radius-btn);
+  border-radius: var(--border-radius-btn);
+  color: #121417;
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
   background-color: var(--active-color-btn);
+}
+
+@media (max-width: 320px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 267px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 16px 30%;
+    max-block-size: 100%;
+  }
 }
 
 @media (min-width: 650px) {
@@ -88,4 +101,3 @@
     border: none;
   }
 }
-

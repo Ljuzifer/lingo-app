@@ -62,7 +62,13 @@
   display: block;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 425px) {
+  .teacher_statics {
+    width: 220px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 860px) {
   .teacher_statics {
     width: 440px;
   }
@@ -79,5 +85,9 @@
 
   .servis_span {
     margin-bottom: 28px;
+  }
+
+  .teacher_statics {
+    margin-bottom: 18px;
   }
 }
