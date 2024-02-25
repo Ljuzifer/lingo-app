@@ -2,11 +2,12 @@ import css from "./BtnAuth.module.css";
 import BasicModal from "components/Modal/BasicModal";
 import AuthModal from "components/Form/AuthForm/AuthModal";
 import useAuth from "hooks/useAuth";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../../../redux/auth/authOperation";
 import useModal from "hooks/useModal";
 import sprite from "images/InlineSprite.svg";
 import { clearFavorites } from "../../../redux/favorite/favoriteSlice";
+import { selectRandomStyle } from "../../../redux/auth/authSelectors";
 
 export default function BtnAuth() {
   const dispatch = useDispatch();
@@ -16,6 +17,8 @@ export default function BtnAuth() {
     dispatch(logoutUser());
     dispatch(clearFavorites());
   };
+
+  const randomStyle = useSelector(selectRandomStyle);
 
   return (
     <>
@@ -32,7 +35,11 @@ export default function BtnAuth() {
             <button
               className={css.btn_login}
               onClick={() => openModal("login")}
+              style={{ "--login-color": randomStyle.btn }}
             >
+              <svg style={{ "--login-icon-color": randomStyle.btn }}>
+                <use xlinkHref={`${sprite}#login`} />
+              </svg>
               Log in
             </button>
           </li>
