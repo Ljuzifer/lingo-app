@@ -1,27 +1,26 @@
-import { useEffect, useState } from 'react';
-import LoadMore from 'components/Button/LoadMore';
-import Filter from 'components/Filter/Filter';
-import TeacherCard from 'components/TeacherCard/TeacherCard';
-import Section from 'components/Section/Section';
-import Container from 'components/Container/Container';
-import { useDispatch } from 'react-redux';
-import { fetchTeachers } from '../../redux/teacher/teacherOperation';
-import { fetchFavorites } from '../../redux/favorite/favoriteOperation';
-import useTeachers from 'hooks/useTeachers';
-import { useLoadMore } from 'hooks/useLoadMore';
-import useUpdateFavorites from 'hooks/useUpdateFavorites';
-import css from './Teachers.module.css';
-import useAuth from 'hooks/useAuth';
-
+import { useEffect, useState } from "react";
+import LoadMore from "components/Button/LoadMore";
+import Filter from "components/Filter/Filter";
+import TeacherCard from "components/TeacherCard/TeacherCard";
+import Section from "components/Section/Section";
+import Container from "components/Container/Container";
+import { useDispatch } from "react-redux";
+import { fetchTeachers } from "../../redux/teacher/teacherOperation";
+import { fetchFavorites } from "../../redux/favorite/favoriteOperation";
+import useTeachers from "hooks/useTeachers";
+import { useLoadMore } from "hooks/useLoadMore";
+import useUpdateFavorites from "hooks/useUpdateFavorites";
+import css from "./Teachers.module.css";
+import useAuth from "hooks/useAuth";
 
 export default function Teachers() {
   const dispatch = useDispatch();
-  const { user, } = useAuth();
-  
+  const { user } = useAuth();
+
   const { updateFavorites, isFavoriteBtn } = useUpdateFavorites();
   const { teachers, status } = useTeachers();
   const [filteredTeachers, setFilteredTeachers] = useState(teachers);
-  const [selectedLevel, setSelectedLevel] = useState('A1 Beginner');
+  const [selectedLevel, setSelectedLevel] = useState("");
   const {
     teachersToShow,
     hasMore,
@@ -58,9 +57,9 @@ export default function Teachers() {
           selectedLevel={selectedLevel}
           setSelectedLevel={setSelectedLevel}
         />
-        {status === 'fulfilled' && (
-          <div>
-            {teachersToShow.map(teacher => (
+        {status === "fulfilled" && (
+          <div className={css.fully}>
+            {teachersToShow.map((teacher) => (
               <TeacherCard
                 teacher={teacher}
                 key={teacher.id}

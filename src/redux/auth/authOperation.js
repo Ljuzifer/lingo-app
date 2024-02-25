@@ -47,6 +47,7 @@ export const loginUser = createAsyncThunk(
         email,
         password
       );
+
       return {
         displayName: userCredential.user.displayName,
         email: userCredential.user.email,
@@ -107,7 +108,7 @@ export const authorizationGoogle = createAsyncThunk(
         accessToken: userCredential.user.accessToken,
       };
     } catch (error) {
-      console.error("Login error:", error.message);
+      // console.error("Login error:", error.message);
       return rejectWithValue(error.message);
     }
   }

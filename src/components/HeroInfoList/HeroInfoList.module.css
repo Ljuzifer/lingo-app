@@ -7,6 +7,7 @@
   padding: 24px;
   border-radius: var(--border);
   border: 2.5px dashed #9fbaae;
+  margin-bottom: 44px;
 }
 
 .item {

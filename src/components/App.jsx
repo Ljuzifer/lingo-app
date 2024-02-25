@@ -9,6 +9,7 @@ import { colors } from "utils/randomcolor";
 import PrivateRoute from "./PrivateRoute";
 import AuthRoute from "./AuthRoute";
 import { authSlice } from "../redux/auth/authSlice";
+import { Toaster } from "react-hot-toast";
 
 const HomePage = lazy(() => import("../pages/Home/Home"));
 const TeachersPage = lazy(() => import("../pages/Teachers/Teachers"));
@@ -44,6 +45,8 @@ export const App = () => {
           />
         </Route>
       </Routes>
+
+      <Toaster />
     </>
   );
 };

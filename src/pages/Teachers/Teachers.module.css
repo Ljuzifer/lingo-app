@@ -2,3 +2,7 @@
   max-width: 1184px;
   margin: 0 auto 16px;
 }
+
+.fully {
+  min-height: calc(100vh - 355px);
+}

@@ -24,18 +24,20 @@ export default function Favorites() {
   return (
     <Section>
       <Container>
-        <h1 className={css.title}>Favorites</h1>
-        {favorites.length === 0 && (
-          <p className={css.empty}>Your Favorites list is empty</p>
-        )}
-        {favorites.map((teacher) => (
-          <TeacherCard
-            key={teacher.id}
-            teacher={teacher}
-            isFavoriteBtn={isFavoriteBtn}
-            updateFavorites={updateFavorites}
-          />
-        ))}
+        <div className={css.fully}>
+          <h1 className={css.title}>Favorites</h1>
+          {favorites.length === 0 && (
+            <p className={css.empty}>Your Favorites list is empty</p>
+          )}
+          {favorites.map((teacher) => (
+            <TeacherCard
+              key={teacher.id}
+              teacher={teacher}
+              isFavoriteBtn={isFavoriteBtn}
+              updateFavorites={updateFavorites}
+            />
+          ))}
+        </div>
       </Container>
     </Section>
   );

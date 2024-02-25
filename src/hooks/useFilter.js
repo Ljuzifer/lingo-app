@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useFilter = (
   teachers,
@@ -9,8 +9,8 @@ export const useFilter = (
   selectedLevel,
   setSelectedLevel
 ) => {
-  const [selectedLanguage, setSelectedLanguage] = useState('');
-  const [selectedPrice, setSelectedPrice] = useState('');
+  const [selectedLanguage, setSelectedLanguage] = useState("");
+  const [selectedPrice, setSelectedPrice] = useState("");
 
   const filterTeachers = async (language, level, price) => {
     setTeachersToShow([]);
@@ -30,15 +30,17 @@ export const useFilter = (
   };
 
   const filterByLanguage = (teachers, language) => {
-    return teachers.filter(teacher => teacher.languages.includes(language));
+    return teachers.filter((teacher) => teacher.languages.includes(language));
   };
 
   const filterByLevel = (teachers, level) => {
-    return teachers.filter(teacher => teacher.levels.includes(level));
+    return teachers.filter((teacher) => teacher.levels.includes(level));
   };
 
   const filterByPrice = (teachers, price) => {
-    return teachers.filter(teacher => teacher.price_per_hour === Number(price));
+    return teachers.filter(
+      (teacher) => teacher.price_per_hour === Number(price)
+    );
   };
 
   return {

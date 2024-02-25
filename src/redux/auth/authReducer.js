@@ -1,3 +1,5 @@
+import { toast } from "react-hot-toast";
+
 export const handleFulfilledRegistration = (state, { payload }) => {
   state.error = null;
   state.user.displayName = payload.displayName;
@@ -6,7 +8,7 @@ export const handleFulfilledRegistration = (state, { payload }) => {
   state.token = payload.accessToken;
   state.isLoading = false;
   state.isAuthCheck = true;
-  state.status = 'fulfilled';
+  state.status = "fulfilled";
 };
 export const handleFulfilledLogin = (state, { payload }) => {
   state.error = null;
@@ -16,7 +18,12 @@ export const handleFulfilledLogin = (state, { payload }) => {
   state.token = payload.accessToken;
   state.isLoading = false;
   state.isAuthCheck = true;
-  state.status = 'fulfilled';
+  state.status = "fulfilled";
+
+  toast.success(`You've successfuly logged!`, {
+    duration: 2800,
+    position: "top-center",
+  });
 };
 
 export const handleFulfilledCurrentUser = (state, { payload }) => {
@@ -27,10 +34,10 @@ export const handleFulfilledCurrentUser = (state, { payload }) => {
   state.token = payload.accessToken;
   state.isLoading = false;
   state.isAuthCheck = true;
-  state.status = 'fulfilled';
+  state.status = "fulfilled";
 };
 
-export const handleFulfilledLogOut = state => {
+export const handleFulfilledLogOut = (state) => {
   state.user.displayName = null;
   state.user.email = null;
   state.user.uid = null;
@@ -39,21 +46,31 @@ export const handleFulfilledLogOut = state => {
   state.isLoading = false;
   state.error = null;
   state.isAuthCheck = false;
+
+  toast.success(`You've successfuly logout!`, {
+    duration: 2800,
+    position: "top-center",
+  });
 };
 
-export const handlePending = state => {
+export const handlePending = (state) => {
   state.isLoading = true;
   state.error = null;
-  state.status = 'pending';
+  state.status = "pending";
 };
-
 
 export const handleRejected = (state, { payload }) => {
   state.isLoading = false;
   state.error = payload;
-  state.status = 'rejected';
-};
+  state.status = "rejected";
 
+  if (state.error) {
+    toast.error("Sorry, email or password is wrong...", {
+      duration: 2800,
+      position: "top-center",
+    });
+  }
+};
 
 export const handleAuthorizationGoogle = (state, { payload }) => {
   state.error = null;
@@ -63,5 +80,5 @@ export const handleAuthorizationGoogle = (state, { payload }) => {
   state.token = payload.accessToken;
   state.isLoading = false;
   state.isAuthCheck = true;
-  state.status = 'fulfilled';
+  state.status = "fulfilled";
 };
