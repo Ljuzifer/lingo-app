@@ -8,6 +8,7 @@ import { fetchFavorites } from "../../redux/favorite/favoriteOperation";
 import useFavorites from "hooks/useFavorites";
 import useUpdateFavorites from "hooks/useUpdateFavorites";
 import css from "./Favorites.module.css";
+import { toast } from "react-hot-toast";
 
 export default function Favorites() {
   const { updateFavorites, isFavoriteBtn } = useUpdateFavorites();
@@ -20,6 +21,14 @@ export default function Favorites() {
       dispatch(fetchFavorites(user));
     }
   }, [user, dispatch]);
+
+  useEffect(() => {
+    if (favorites?.length > 0) {
+      toast.success(
+        `You have ${favorites.length} teachers in your favorites :)`
+      );
+    }
+  }, [favorites.length, dispatch]);
 
   return (
     <Section>
