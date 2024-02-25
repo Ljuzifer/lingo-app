@@ -1,4 +1,5 @@
 import { useState } from "react";
+import memoize from "memoize-one";
 
 export const useFilter = (
   teachers,
@@ -11,6 +12,20 @@ export const useFilter = (
 ) => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
+
+  const filterByLanguage = memoize((teachers, language) => {
+    return teachers.filter((teacher) => teacher.languages.includes(language));
+  });
+
+  const filterByLevel = memoize((teachers, level) => {
+    return teachers.filter((teacher) => teacher.levels.includes(level));
+  });
+
+  const filterByPrice = memoize((teachers, price) => {
+    return teachers.filter(
+      (teacher) => teacher.price_per_hour === Number(price)
+    );
+  });
 
   const filterTeachers = async (language, level, price) => {
     setTeachersToShow([]);
@@ -29,19 +44,19 @@ export const useFilter = (
     setFilteredTeachers(filterData);
   };
 
-  const filterByLanguage = (teachers, language) => {
-    return teachers.filter((teacher) => teacher.languages.includes(language));
-  };
+  // const filterByLanguage = (teachers, language) => {
+  //   return teachers.filter((teacher) => teacher.languages.includes(language));
+  // };
 
-  const filterByLevel = (teachers, level) => {
-    return teachers.filter((teacher) => teacher.levels.includes(level));
-  };
+  // const filterByLevel = (teachers, level) => {
+  //   return teachers.filter((teacher) => teacher.levels.includes(level));
+  // };
 
-  const filterByPrice = (teachers, price) => {
-    return teachers.filter(
-      (teacher) => teacher.price_per_hour === Number(price)
-    );
-  };
+  // const filterByPrice = (teachers, price) => {
+  //   return teachers.filter(
+  //     (teacher) => teacher.price_per_hour === Number(price)
+  //   );
+  // };
 
   return {
     selectedLanguage,

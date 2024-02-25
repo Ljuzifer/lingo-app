@@ -28,7 +28,7 @@ export default function Favorites() {
         `You have ${favorites.length} teachers in your favorites :)`
       );
     }
-  }, [favorites.length, dispatch]);
+  }, [favorites?.length, dispatch]);
 
   return (
     <Section>
