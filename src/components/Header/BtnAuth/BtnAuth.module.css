@@ -75,6 +75,11 @@
     padding: 14px 0;
   }
 
+  .btn_login:focus,
+  .btn_login:hover {
+    color: var(--login-color);
+  }
+
   .btn_login svg {
     width: 20px;
     height: 20px;
