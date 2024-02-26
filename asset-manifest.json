@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lingo-app/static/css/main.f3fba12f.css",
-    "main.js": "/lingo-app/static/js/main.aca7bf23.js",
+    "main.js": "/lingo-app/static/js/main.41f156d3.js",
     "static/css/116.4438c510.chunk.css": "/lingo-app/static/css/116.4438c510.chunk.css",
     "static/js/116.2b1e8457.chunk.js": "/lingo-app/static/js/116.2b1e8457.chunk.js",
     "static/css/525.b685f64a.chunk.css": "/lingo-app/static/css/525.b685f64a.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/iMac = Yellow.svg": "/lingo-app/static/media/iMac = Yellow.85bb9ab8d4b10631647b.svg",
     "index.html": "/lingo-app/index.html",
     "main.f3fba12f.css.map": "/lingo-app/static/css/main.f3fba12f.css.map",
-    "main.aca7bf23.js.map": "/lingo-app/static/js/main.aca7bf23.js.map",
+    "main.41f156d3.js.map": "/lingo-app/static/js/main.41f156d3.js.map",
     "116.4438c510.chunk.css.map": "/lingo-app/static/css/116.4438c510.chunk.css.map",
     "116.2b1e8457.chunk.js.map": "/lingo-app/static/js/116.2b1e8457.chunk.js.map",
     "525.b685f64a.chunk.css.map": "/lingo-app/static/css/525.b685f64a.chunk.css.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.f3fba12f.css",
-    "static/js/main.aca7bf23.js"
+    "static/js/main.41f156d3.js"
   ]
 }
