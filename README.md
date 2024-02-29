@@ -42,7 +42,7 @@ LearnLingo is a language learning application that leverages modern web technolo
 
 ## Content
 
-- [TT & Mockup](#Tech task)
+- [TT & Mockup](#Tech_task)
 - [Technologies](#Technologies)
 - [Development](#Development)
 - [Project Developer](#Developer)
